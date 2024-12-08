@@ -1,3 +1,7 @@
+# Release 1.2
+## 08/12/2024
+- Quitadas las strings.xml del intento de crear activities 2
+
 # Release 1.1 
 ## 08/12/2024
 - Quitadas las strings.xml del intento de crear activities
@@ -7,8 +11,7 @@
 - Sólo MainActivity.kt
 - UI Completa
 - Funcionan los botones
-- Funcionan los snackbars
-
+- Funcionan los snackbars 
 
 # LoginActivity
 Tarea para 2DAM de PMP
