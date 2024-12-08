@@ -1,6 +1,6 @@
 # Release 1.2
 ## 08/12/2024
-- Quitadas las strings.xml del intento de crear activities
+- Quitadas las strings.xml del intento de crear activities 2
 
 # Release 1.1 
 ## 08/12/2024
@@ -11,7 +11,7 @@
 - Sólo MainActivity.kt
 - UI Completa
 - Funcionan los botones
-- Funcionan los snackbars
+- Funcionan los snackbars 
 
 
 # LoginActivity
