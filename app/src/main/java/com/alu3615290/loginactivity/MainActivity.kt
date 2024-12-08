@@ -50,7 +50,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         //Gestión de los snackbars desde botones
         binding.sesionFacebook.setOnClickListener() {
             Snackbar.make(it, getString(R.string.snackbarFacebook), Snackbar.LENGTH_INDEFINITE)

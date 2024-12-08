@@ -13,6 +13,5 @@
 - Funcionan los botones
 - Funcionan los snackbars 
 
-
 # LoginActivity
 Tarea para 2DAM de PMP
