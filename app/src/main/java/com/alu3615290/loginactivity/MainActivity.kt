@@ -38,16 +38,32 @@ class MainActivity : AppCompatActivity() {
             null
         )
 
-        //Gestión de los errores
+        //Gestión de los errores y de los botones que nos llevan a navegar a sitios
+        //Este inicioSesión nos llevará a RVActivity
         binding.inicioSesion.setOnClickListener() {
             binding.inicioSesion.setOnClickListener() {
                 Snackbar.make(it, getString(R.string.snackbarInicioSesion), Snackbar.LENGTH_INDEFINITE)
                     .setAction(getString(R.string.snackbarAcceder)) {
-
+                        //Vamos a RVActivity
                     }
                     .show()
 
             }
+        }
+        //Gestión de navegación a ContactActivity por parte de cualquiera de los dos botones de FB y Google
+        binding.sesionFacebook.setOnClickListener() {
+            Snackbar.make(it, getString(R.string.snackbarFacebook), Snackbar.LENGTH_INDEFINITE)
+                .setAction(getString(R.string.snackbarAcceder)) {
+                    //Vamos a ContactActivity
+                }
+                .show()
+        }
+        binding.sesionGoogle.setOnClickListener() {
+            Snackbar.make(it, getString(R.string.snackbarGoogle), Snackbar.LENGTH_INDEFINITE)
+                .setAction(getString(R.string.snackbarAcceder)) {
+                    //Vamos a ContactActivity
+                }
+                .show()
         }
 
         //Gestión de los snackbars desde botones
@@ -56,33 +72,11 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        binding.sesionFacebook.setOnClickListener() {
-            Snackbar.make(it, getString(R.string.snackbarFacebook), Snackbar.LENGTH_INDEFINITE)
-                .setAction(getString(R.string.snackbarAcceder)) {
-
-                }
-                .show()
-        }
-        binding.sesionGoogle.setOnClickListener() {
-            Snackbar.make(it, getString(R.string.snackbarGoogle), Snackbar.LENGTH_INDEFINITE)
-                .setAction(getString(R.string.snackbarAcceder)) {
-
-                }
-                .show()
-        }
         binding.registro.setOnClickListener() {
-            Snackbar.make(it, getString(R.string.snackbarRegistro), Snackbar.LENGTH_INDEFINITE)
-                .setAction(getString(R.string.snackbarCerrar)) {
-
-                }
-                .show()
+            Snackbar.make(it, getString(R.string.snackbarRegistro), Snackbar.LENGTH_INDEFINITE).show()
         }
         binding.paswordReset.setOnClickListener() {
-            Snackbar.make(it, getString(R.string.snackbarPasswordReset), Snackbar.LENGTH_INDEFINITE)
-                .setAction(getString(R.string.snackbarCerrar)) {
-
-                }
-                .show()
+            Snackbar.make(it, getString(R.string.snackbarPasswordReset), Snackbar.LENGTH_INDEFINITE).show()
         }
 
     }

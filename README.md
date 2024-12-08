@@ -1,3 +1,6 @@
+# Release 1.4.3 - 09/12/2024
+- Ordenado el MainActivity.kt
+
 # Release 1.4.2 - 09/12/2024
 - Corregido activity_main.xml
 
