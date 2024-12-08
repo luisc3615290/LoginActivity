@@ -7,7 +7,8 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:id="@+id/LoginActivityLayout"
-        android:background="#D3D3D3" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="-8dp">
+        android:background="#D3D3D3" tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="-8dp">
 
     <ImageView
             android:id="@+id/pokeLogo"
@@ -20,7 +21,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.079"
             app:layout_constraintHorizontal_bias="0.498"
-            android:contentDescription="@string/Pokeball" android:layout_marginBottom="545dp"/>
+            android:contentDescription="@string/Pokeball"
+            android:layout_marginBottom="545dp"/>
 
     <ImageView
             android:layout_width="wrap_content"
@@ -28,8 +30,10 @@
             app:srcCompat="@drawable/help"
             android:id="@+id/hint"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.39"/>
     <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtInputUsername"
@@ -49,7 +53,8 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="monospace" tools:layout_editor_absoluteY="199dp"
+                android:fontFamily="monospace"
+                tools:layout_editor_absoluteY="199dp"
                 tools:layout_editor_absoluteX="45dp"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -60,9 +65,13 @@
             app:endIconMode="password_toggle"
             android:hint="@string/password"
             app:boxBackgroundColor="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="30dp" android:layout_marginEnd="30dp" android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@+id/txtInputUsername" app:layout_constraintHorizontal_bias="1.0">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtInputUsername"
+            app:layout_constraintHorizontal_bias="1.0">
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,17 +85,22 @@
             android:layout_height="65dp"
             android:id="@+id/inicioSesion"
             android:backgroundTint="@color/pokeball"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.495" app:layout_constraintVertical_bias="0.564"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.564"/>
     <View
             android:id="@+id/lineaDivisora1"
             android:layout_width="360dp"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="468dp" app:layout_constraintHorizontal_bias="0.313"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="468dp"
+            app:layout_constraintHorizontal_bias="0.313"/>
     <Button
             android:text="@string/sesionGoogle"
             android:layout_width="300dp"
@@ -95,9 +109,12 @@
             android:backgroundTint="@color/white"
             android:textColor="@color/pokeball"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="9dp"
-            app:layout_constraintTop_toBottomOf="@+id/sesionFacebook" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.495" app:layout_constraintVertical_bias="0.034"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="9dp"
+            app:layout_constraintTop_toBottomOf="@+id/sesionFacebook"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.034"/>
     <Button
             android:text="@string/sesionFacebook"
             android:layout_width="300dp"
@@ -106,8 +123,10 @@
             android:backgroundTint="@color/white"
             android:textColor="@color/pokeball"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@+id/lineaDivisora1" app:layout_constraintHorizontal_bias="0.495"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/lineaDivisora1"
+            app:layout_constraintHorizontal_bias="0.495"/>
     <View
             android:id="@+id/lineaDivisora2"
             android:layout_width="360dp"
@@ -126,24 +145,33 @@
             android:id="@+id/registro"
             android:backgroundTint="@color/pokeball"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/paswordReset" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lineaDivisora2" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.36" android:layout_marginStart="30dp"/>
+            app:layout_constraintEnd_toStartOf="@+id/paswordReset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineaDivisora2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.36"
+            android:layout_marginStart="30dp"/>
     <Button
             android:text="@string/reseteoPassword"
             android:layout_width="135dp"
             android:layout_height="65dp"
             android:id="@+id/paswordReset"
             android:backgroundTint="@color/pokeball"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lineaDivisora2" android:layout_marginEnd="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineaDivisora2"
+            android:layout_marginEnd="28dp"
             app:layout_constraintVertical_bias="0.36"/>
     <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/poketext" android:id="@+id/imageView2"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/poketext"
+            android:id="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/pokeLogo"
-            app:layout_constraintBottom_toTopOf="@+id/txtInputUsername" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="10dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/txtInputUsername"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="10dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

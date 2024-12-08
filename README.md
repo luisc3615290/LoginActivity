@@ -1,3 +1,6 @@
+# Release 1.4.2 - 09/12/2024
+- Corregido activity_main.xml
+
 # Release 1.4.1 - 09/12/2024
 - Añadido logo POKEMON CAMP - nuevo activity_main.xml
 
