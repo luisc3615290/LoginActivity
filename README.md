@@ -1,3 +1,6 @@
+# Release 1.3 - 09/12/2024
+- Añadido logo POKEMON CAMP
+
 # Release 1.3 - 08/12/2024
 - Añadido botón de password hint
 
