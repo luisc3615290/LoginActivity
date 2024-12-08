@@ -52,6 +52,11 @@ class MainActivity : AppCompatActivity() {
 
 
         //Gestión de los snackbars desde botones
+        binding.hint.setOnClickListener() {
+                Snackbar.make(it, getString(R.string.snackbarAyudaPassword), Snackbar.LENGTH_SHORT).show()
+        }
+
+
         binding.sesionFacebook.setOnClickListener() {
             Snackbar.make(it, getString(R.string.snackbarFacebook), Snackbar.LENGTH_INDEFINITE)
                 .setAction(getString(R.string.snackbarAcceder)) {
