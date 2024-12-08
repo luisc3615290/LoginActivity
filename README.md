@@ -1,3 +1,7 @@
+# Release 1.2
+## 08/12/2024
+- Quitadas las strings.xml del intento de crear activities
+
 # Release 1.1 
 ## 08/12/2024
 - Quitadas las strings.xml del intento de crear activities
