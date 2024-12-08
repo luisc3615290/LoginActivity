@@ -50,7 +50,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         //Gestión de los snackbars desde botones
         binding.hint.setOnClickListener() {
                 Snackbar.make(it, getString(R.string.snackbarAyudaPassword), Snackbar.LENGTH_SHORT).show()
