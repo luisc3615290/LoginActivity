@@ -1,17 +1,13 @@
 package com.alu3615290.loginactivity
 
-import android.os.Build
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.core.view.get
-import androidx.core.view.isEmpty
-import androidx.core.view.isNotEmpty
-import androidx.core.view.size
+import com.alu3615290.loginactivity.activities.ContactoFormActivity
+import com.alu3615290.loginactivity.activities.RVActivity
 import com.alu3615290.loginactivity.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -41,27 +37,28 @@ class MainActivity : AppCompatActivity() {
         //Gestión de los errores y de los botones que nos llevan a navegar a sitios
         //Este inicioSesión nos llevará a RVActivity
         binding.inicioSesion.setOnClickListener() {
-            binding.inicioSesion.setOnClickListener() {
                 Snackbar.make(it, getString(R.string.snackbarInicioSesion), Snackbar.LENGTH_INDEFINITE)
                     .setAction(getString(R.string.snackbarAcceder)) {
-                        //Vamos a RVActivity
+                        val intentRV = Intent(this,RVActivity::class.java)
+                        startActivity(intentRV)
                     }
                     .show()
-
-            }
         }
+
         //Gestión de navegación a ContactActivity por parte de cualquiera de los dos botones de FB y Google
-        binding.sesionFacebook.setOnClickListener() {
+        facebookButton.setOnClickListener() {
             Snackbar.make(it, getString(R.string.snackbarFacebook), Snackbar.LENGTH_INDEFINITE)
                 .setAction(getString(R.string.snackbarAcceder)) {
-                    //Vamos a ContactActivity
+                    val intentContactos = Intent(this,ContactoFormActivity::class.java)
+                    startActivity(intentContactos)
                 }
                 .show()
         }
-        binding.sesionGoogle.setOnClickListener() {
+        googleButton.setOnClickListener() {
             Snackbar.make(it, getString(R.string.snackbarGoogle), Snackbar.LENGTH_INDEFINITE)
                 .setAction(getString(R.string.snackbarAcceder)) {
-                    //Vamos a ContactActivity
+                    val intentContactos = Intent(this,ContactoFormActivity::class.java)
+                    startActivity(intentContactos)
                 }
                 .show()
         }

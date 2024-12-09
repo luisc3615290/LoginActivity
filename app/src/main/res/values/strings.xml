@@ -1,8 +1,11 @@
 <resources>
+    <!--ACTIVITY_MAIN.XML-->
     <string name="app_name">LoginActivity</string>
     <string name="Pokeball">Pokeball</string>
+    <string name="tituloApp">Pokemon Camp</string>
     <string name="usuario">*usuario</string>
     <string name="password">*contraseña</string>
+    <string name="recordatorio">recordatorio campos</string>
     <string name="registro">Nuevo Usuario</string>
     <string name="reseteoPassword">Resetear password</string>
     <string name="iniciarSesion">Iniciar Sesión</string>
@@ -17,4 +20,7 @@
     <string name="snackbarCerrar">CERRAR</string>
     <string name="snackbarAyudaPassword">1.Campos obligatorios\n2.MAY+min+números+-#?*+_-</string>
     <string name="camposVacios">Usuario o/y Contraseña vacío(s)</string>
+    <!--ACTIVITY_CONTACTO.XML-->
+    <!--ITEM.XML-->
+    <!--SPLASH SCREEN-->
 </resources>
