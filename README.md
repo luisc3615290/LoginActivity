@@ -1,3 +1,6 @@
+# Release 1.5.0 - 09/12/2024
+- Añadiendo los intents, funcionan perfectamente
+
 # Release 1.4.3 - 09/12/2024
 - Ordenado el MainActivity.kt
 
