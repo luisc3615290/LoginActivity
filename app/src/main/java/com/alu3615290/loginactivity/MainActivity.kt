@@ -8,6 +8,7 @@ import com.alu3615290.loginactivity.activities.ContactoFormActivity
 import com.alu3615290.loginactivity.activities.RVActivity
 import com.alu3615290.loginactivity.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -37,35 +38,37 @@ class MainActivity : AppCompatActivity() {
         //función validar campos user y password
         fun validarCampos(usuario: String?, password: String?): Boolean {
             if (usuario.isNullOrBlank()) {
-                println("El campo de usuario está vacío.")
                 return false
             }
             if (password.isNullOrBlank()) {
-                println("El campo de contraseña está vacío.")
                 return false
             }
-            println("Todos los campos están completos.")
+            return true
+        }
+        fun validarCampo(string: String?): Boolean {
+            if (string.isNullOrBlank()) {
+                return false
+            }
             return true
         }
         //Gestión de los errores y de los botones que nos llevan a navegar a sitios
         //Este inicioSesión nos llevará a RVActivity
         //binding.txtInputUsername.toString(), binding.txtInputPassword.toString())
         binding.inicioSesion.setOnClickListener() {
-            val usuario = binding.txtInputUsername
-            val password = binding.txtInputPassword
-            if (validarCampos(usuario.toString(), password.toString())) {
+            val usuarioInput = binding.InputUsername?.text?.toString() ?: ""
+            val passwordInput = binding.InputPassword?.text?.toString() ?: ""
+            if (validarCampos(usuarioInput, passwordInput)) {
                 Snackbar.make(it, getString(R.string.snackbarInicioSesion), Snackbar.LENGTH_INDEFINITE)
                     .setAction(getString(R.string.snackbarAcceder)) {
                         val intentRV = Intent(this,RVActivity::class.java)
                         startActivity(intentRV)
                     }
                     .show()
-            } else {
-                Snackbar.make(it, getString(R.string.camposVacios), Snackbar.LENGTH_INDEFINITE)
-                    .setAction(getString(R.string.snackbarCerrar)){
-                    }
-                    .show()
-                }
+            } else if (!validarCampo(usuarioInput)) {
+                binding.InputUsername?.error = "El campo Usuario no puede estar vacío"
+            } else if (!validarCampo(passwordInput)) {
+                binding.InputPassword?.error = "El campo Password no puede estar vacío"
+            }
         }
 
         //Gestión de navegación a ContactActivity por parte de cualquiera de los dos botones de FB y Google
