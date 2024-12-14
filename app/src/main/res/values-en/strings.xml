@@ -1,0 +1,26 @@
+<resources>
+    <!--ACTIVITY_MAIN.XML-->
+    <string name="app_name">Pokemon Camp</string>
+    <string name="Pokeball">Pokeball</string>
+    <string name="tituloApp">Pokemon Camp</string>
+    <string name="usuario">*User</string>
+    <string name="password">*Password</string>
+    <string name="recordatorio">Authentication disclaimer</string>
+    <string name="registro">New User</string>
+    <string name="reseteoPassword">Password Reset</string>
+    <string name="iniciarSesion">Start Session</string>
+    <string name="sesionFacebook">Start Session: Facebook</string>
+    <string name="sesionGoogle">Start Session: Google</string>
+    <string name="snackbarInicioSesion">1.You pressed Start Session\n2.Acces to RVActivity</string>
+    <string name="snackbarFacebook">1.You pressed Facebook login\n2.Acces to ContactoActivity</string>
+    <string name="snackbarGoogle">1.You pressed Google login\n2.Acces to ContactoActivity</string>
+    <string name="snackbarRegistro">You pressed new user</string>
+    <string name="snackbarPasswordReset">You pressed password reset</string>
+    <string name="snackbarAcceder">ACCESS</string>
+    <string name="snackbarCerrar">CLOSE</string>
+    <string name="snackbarAyudaPassword">1.Mandatory Fields\n2.UPP+low+numb+-#?*+_-</string>
+    <string name="camposVacios">Empty User or/and Password</string>
+    <!--ACTIVITY_CONTACTO.XML-->
+    <!--ITEM.XML-->
+    <!--SPLASH SCREEN-->
+</resources>
