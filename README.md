@@ -1,3 +1,8 @@
+# Release 1.6.0 - 14/12/2024
+- Layout landscape terminado
+- Strings EN terminados
+- Con la lógica de campos vacíos para user/password
+
 # Release 1.5.0 - 09/12/2024
 - Añadiendo los intents, funcionan perfectamente
 

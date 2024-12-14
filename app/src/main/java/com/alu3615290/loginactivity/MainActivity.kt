@@ -34,15 +34,38 @@ class MainActivity : AppCompatActivity() {
             null
         )
 
+        //función validar campos user y password
+        fun validarCampos(usuario: String?, password: String?): Boolean {
+            if (usuario.isNullOrBlank()) {
+                println("El campo de usuario está vacío.")
+                return false
+            }
+            if (password.isNullOrBlank()) {
+                println("El campo de contraseña está vacío.")
+                return false
+            }
+            println("Todos los campos están completos.")
+            return true
+        }
         //Gestión de los errores y de los botones que nos llevan a navegar a sitios
         //Este inicioSesión nos llevará a RVActivity
+        //binding.txtInputUsername.toString(), binding.txtInputPassword.toString())
         binding.inicioSesion.setOnClickListener() {
+            val usuario = binding.txtInputUsername
+            val password = binding.txtInputPassword
+            if (validarCampos(usuario.toString(), password.toString())) {
                 Snackbar.make(it, getString(R.string.snackbarInicioSesion), Snackbar.LENGTH_INDEFINITE)
                     .setAction(getString(R.string.snackbarAcceder)) {
                         val intentRV = Intent(this,RVActivity::class.java)
                         startActivity(intentRV)
                     }
                     .show()
+            } else {
+                Snackbar.make(it, getString(R.string.camposVacios), Snackbar.LENGTH_INDEFINITE)
+                    .setAction(getString(R.string.snackbarCerrar)){
+                    }
+                    .show()
+                }
         }
 
         //Gestión de navegación a ContactActivity por parte de cualquiera de los dos botones de FB y Google
@@ -75,6 +98,10 @@ class MainActivity : AppCompatActivity() {
         binding.paswordReset.setOnClickListener() {
             Snackbar.make(it, getString(R.string.snackbarPasswordReset), Snackbar.LENGTH_INDEFINITE).show()
         }
+
+
+
+
 
     }
 
