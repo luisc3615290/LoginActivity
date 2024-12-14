@@ -1,3 +1,7 @@
+# Release 1.7.0 - 14/12/2024
+- Ejercicio #1 Terminado
+- Excepciones tratadas
+
 # Release 1.6.0 - 14/12/2024
 - Layout landscape terminado
 - Strings EN terminados
