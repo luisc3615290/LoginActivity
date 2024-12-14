@@ -63,7 +63,7 @@
             android:id="@+id/txtInputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:endIconMode="password_toggle"
+            app:passwordToggleEnabled="true"
             android:hint="@string/password"
             app:boxBackgroundColor="#FFFFFF"
             app:layout_constraintStart_toStartOf="parent"

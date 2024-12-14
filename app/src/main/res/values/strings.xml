@@ -19,7 +19,8 @@
     <string name="snackbarAcceder">ACCEDER</string>
     <string name="snackbarCerrar">CERRAR</string>
     <string name="snackbarAyudaPassword">1.Campos obligatorios\n2.MAY+min+números+-#?*+_-</string>
-    <string name="camposVacios">Usuario o/y Contraseña vacío(s)</string>
+    <string name="usuarioVacio">"El campo Usuario no puede estar vacío"</string>
+    <string name="passwordVacio">"El campo Password no puede estar vacío"</string>
     <!--ACTIVITY_CONTACTO.XML-->
     <!--ITEM.XML-->
     <!--SPLASH SCREEN-->

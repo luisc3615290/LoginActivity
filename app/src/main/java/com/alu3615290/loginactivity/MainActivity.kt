@@ -65,9 +65,12 @@ class MainActivity : AppCompatActivity() {
                     }
                     .show()
             } else if (!validarCampo(usuarioInput)) {
-                binding.InputUsername?.error = "El campo Usuario no puede estar vacío"
+                binding.InputUsername?.error = getString(R.string.usuarioVacio)
             } else if (!validarCampo(passwordInput)) {
-                binding.InputPassword?.error = "El campo Password no puede estar vacío"
+                //He tenido que usar método deprecado para ocultar el toggle (además de cambiar el xml esa propiedad "password_toggle" a app:passwordToggleEnabled="true")
+                binding.txtInputPassword.isPasswordVisibilityToggleEnabled=false
+                binding.InputPassword?.error = getString(R.string.passwordVacio)
+                binding.txtInputPassword.errorIconDrawable
             }
         }
 

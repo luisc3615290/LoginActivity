@@ -19,7 +19,8 @@
     <string name="snackbarAcceder">ACCESS</string>
     <string name="snackbarCerrar">CLOSE</string>
     <string name="snackbarAyudaPassword">1.Mandatory Fields\n2.UPP+low+numb+-#?*+_-</string>
-    <string name="camposVacios">Empty User or/and Password</string>
+    <string name="usuarioVacio">"Field USER can't be empty"</string>
+    <string name="passwordVacio">"Field PASSWORD can't be empty"</string>
     <!--ACTIVITY_CONTACTO.XML-->
     <!--ITEM.XML-->
     <!--SPLASH SCREEN-->
