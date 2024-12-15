@@ -17,10 +17,6 @@
             android:name=".MainActivity"
             android:theme="@style/SplashTheme"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activities.RVActivity"
@@ -29,6 +25,10 @@
         <activity
                 android:name=".activities.ContactoFormActivity"
                 android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
