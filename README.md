@@ -1,3 +1,6 @@
+# Release 2.1.1 - 15/12/2024
+- ID's y strings arreglados para Contat View
+
 # Release 2.1.0 - 15/12/2024
 - Layout de Contact_Form Definitivo
 

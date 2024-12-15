@@ -22,6 +22,10 @@
     <string name="usuarioVacio">"El campo Usuario no puede estar vacío"</string>
     <string name="passwordVacio">"El campo Password no puede estar vacío"</string>
     <!--ACTIVITY_CONTACTO.XML-->
+    <string name="contact_phone">+34600611622</string>
+    <string name="contact_email">3615290@alu.murciaeduca.es</string>
+    <string name="contact_address">Calle Joaquín Costa, 7</string>
+    <string name="contact_whatsapp">Chat vía Whatsapp</string>
     <!--ITEM.XML-->
     <!--SPLASH SCREEN-->
 </resources>
