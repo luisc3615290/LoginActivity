@@ -1,3 +1,6 @@
+# Release 2.1.0 - 15/12/2024
+- Layout de Contact_Form Definitivo
+
 # Release 2.0.1 - 15/12/2024
 - Subido logo de whatsapp
 
