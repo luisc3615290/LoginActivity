@@ -1,3 +1,6 @@
+# Release 2.0.1 - 15/12/2024
+- Subido logo de whatsapp
+
 # Release 2.0.0 - 15/12/2024
 - Contact Form xml creado y casi funcionando
 
