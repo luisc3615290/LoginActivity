@@ -1,3 +1,6 @@
+# Release 1.8.0 - 15/12/2024
+- Splash Screen creado y funcionando
+
 # Release 1.7.0 - 14/12/2024
 - Ejercicio #1 Terminado
 - Excepciones tratadas

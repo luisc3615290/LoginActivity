@@ -8,16 +8,31 @@ import com.alu3615290.loginactivity.activities.ContactoFormActivity
 import com.alu3615290.loginactivity.activities.RVActivity
 import com.alu3615290.loginactivity.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.textfield.TextInputEditText
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.SplashTheme)
         //básicos del binding para empezar app
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+
+
+        // Simular carga durante 3 segundos usando corutinas
+        CoroutineScope(Dispatchers.Main).launch {
+            setTheme(R.style.SplashTheme)
+            delay(3000) // Pausa de 3 segundos
+            // Aquí puedes cargar datos o simplemente mostrar el contenido
+            setTheme(R.style.Theme_LoginActivity)
+            setContentView(binding.root)
+        }
+
+        //setTheme(R.style.SplashTheme)
 
         //Logos de facebook y google en los botones
         val facebookButton = binding.sesionFacebook;
