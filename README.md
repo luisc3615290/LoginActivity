@@ -1,3 +1,6 @@
+# Release 2.0.0 - 15/12/2024
+- Contact Form xml creado y casi funcionando
+
 # Release 1.8.0 - 15/12/2024
 - Splash Screen creado y funcionando
 
