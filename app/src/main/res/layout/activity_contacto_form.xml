@@ -28,7 +28,7 @@
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.005"/>
             <ImageView
-                    android:layout_width="150dp"
+                    android:layout_width="250dp"
                     android:layout_height="50dp" app:srcCompat="@drawable/contact_title"
                     android:id="@+id/logo_contacto"
                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -44,17 +44,18 @@
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.263"
                     android:foreground="@drawable/contact_phone"
                     android:foregroundTint="@color/white" android:backgroundTint="@color/pokeball"/>
-            <EditText
+            <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:ems="10"
-                    android:id="@+id/editTextPhone"
+                    android:id="@+id/TextViewPhone"
                     app:layout_constraintStart_toEndOf="@+id/btn_llamar" android:layout_marginStart="10dp"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintVertical_bias="0.262" android:text="+34600611622" android:textSize="18dp"
-                    android:textStyle="bold" android:minHeight="48dp"/>
+                    android:textStyle="bold" android:minHeight="48dp" android:textColor="@color/pokeball"
+                    android:gravity="center_vertical"/>
             <Button
                     android:layout_width="56dp"
                     android:text="@string/Pokeball"
@@ -65,18 +66,19 @@
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.34"
                     android:foreground="@drawable/contact_email"
                     android:foregroundTint="@color/white" android:backgroundTint="@color/pokeball"/>
-            <EditText
+            <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:ems="10"
-                    android:id="@+id/editTextTextEmailAddress"
+                    android:id="@+id/TextViewEmail"
                     android:textStyle="bold"
                     android:text="3615290@alu.murciaeduca.es" android:textSize="18dp"
                     app:layout_constraintStart_toEndOf="@+id/btn_mail" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.341"
-                    android:layout_marginStart="10dp" android:minHeight="48dp"/>
+                    android:layout_marginStart="10dp" android:minHeight="48dp" android:textColor="@color/pokeball"
+                    android:gravity="center_vertical"/>
             <Button
                     android:layout_width="56dp"
                     android:text="@string/Pokeball"
@@ -87,17 +89,18 @@
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.418"
                     android:foreground="@drawable/contact_location"
                     android:foregroundTint="@color/white" android:backgroundTint="@color/pokeball"/>
-            <EditText
+            <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPostalAddress"
                     android:ems="10"
-                    android:id="@+id/editTextTextPostalAddress"
+                    android:id="@+id/TextViewPostalAddress"
                     app:layout_constraintStart_toEndOf="@+id/btn_location" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.42"
                     android:text="Calle Joaquín Costa, 7" android:textStyle="bold" android:textSize="18dp"
-                    android:layout_marginStart="10dp" android:minHeight="48dp"/>
+                    android:layout_marginStart="10dp" android:minHeight="48dp" android:textColor="@color/pokeball"
+                    android:gravity="center_vertical"/>
             <Button
                     android:layout_width="56dp"
                     android:text="@string/Pokeball"
@@ -108,18 +111,31 @@
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.499"
                     android:foreground="@drawable/contact_whatsapp"
                     android:foregroundTint="@color/white" android:backgroundTint="@color/pokeball"/>
-            <EditText
+            <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:text="Chat vía Whatsapp"
                     android:ems="10"
-                    android:id="@+id/editTextText"
+                    android:id="@+id/TextViewWhatsapp"
                     android:textSize="18dp" android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/btn_whatsapp" android:layout_marginStart="10dp"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.016"
-                    app:layout_constraintVertical_bias="0.497" android:minHeight="48dp"/>
+                    app:layout_constraintVertical_bias="0.497" android:minHeight="48dp"
+                    android:textColor="@color/pokeball" android:gravity="center_vertical"/>
+            <ImageView
+                    android:id="@+id/mapa"
+                    app:srcCompat="@mipmap/ubiacacion"
+                    android:layout_width="346dp"
+                    android:layout_height="330dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.073"
+                    app:layout_constraintVertical_bias="1.0" android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
