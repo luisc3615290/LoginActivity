@@ -1,3 +1,6 @@
+# Release 2.3.0 - 16/12/2024
+- Terminada parte de Contact, totalmente funcional 
+
 # Release 2.2.0 - 16/12/2024
 - Métodos call (OK), email (WIP) y maps (WIP) en implementación
 

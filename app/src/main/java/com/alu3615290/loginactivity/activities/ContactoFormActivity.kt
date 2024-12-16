@@ -14,8 +14,10 @@ import com.google.android.material.snackbar.Snackbar
 class ContactoFormActivity : AppCompatActivity() {
     private lateinit var binding : ActivityContactoFormBinding
     private val CALL_PHONE_PERMISSION_REQUEST = 123
+    private val EMAIL_PERMISSION_REQUEST = 321
+    private val LOCATION_PERMISSION_REQUEST = 456
 
-    override fun onCreate(savedInstanceState : Bundle?) {
+        override fun onCreate(savedInstanceState : Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityContactoFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -28,7 +30,7 @@ class ContactoFormActivity : AppCompatActivity() {
                 startActivity(intentLlamada)
             }
             else {
-                Snackbar.make(binding.root,"No se puede",Snackbar.LENGTH_INDEFINITE).show()
+                Snackbar.make(binding.root,"No se puede CALL",Snackbar.LENGTH_INDEFINITE).show()
             }
         }
 
@@ -61,12 +63,6 @@ class ContactoFormActivity : AppCompatActivity() {
             }
             startActivity(intentEmail)
 
-            if (intentEmail.resolveActivity(packageManager) != null){
-                startActivity(intentEmail)
-            }
-            else {
-                Snackbar.make(binding.root,"No se puede",Snackbar.LENGTH_INDEFINITE).show()
-            }
         }
 
         binding.TextViewEmail.setOnClickListener(){
@@ -93,30 +89,38 @@ class ContactoFormActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW).apply {
                 data = geoLocation
             }
+            startActivity(intent)
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
             }
+            else {
+                Snackbar.make(binding.root,"No se puede LOCATION",Snackbar.LENGTH_INDEFINITE).show()
+            }
         }
 
-        binding.TextViewEmail.setOnClickListener(){
-            if (ContextCompat.checkSelfPermission(this,android.Manifest.permission.CALL_PHONE)
+        binding.TextViewPostalAddress.setOnClickListener(){
+            if ((ContextCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_COARSE_LOCATION))
                 == PackageManager.PERMISSION_GRANTED){
-                val postalAddress = "geo:0,0?q=Calle+Joaquín+Costa+7+Murcia"
+                val postalAddress = "geo:0,0?q=Joaquín+Costa+7+,+Murcia"
                 showMap(Uri.parse(postalAddress))
             }
             else {
-                if (ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.CALL_PHONE)) {
+                if (ActivityCompat.shouldShowRequestPermissionRationale(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)) {
                     Snackbar.make(
                         binding.root, "El permiso ha sido rechazado previamente\nDebes activarlo desde ajuses",
                         Snackbar.LENGTH_LONG
                     ).show()
                 } else {
                     ActivityCompat.requestPermissions(
-                        this, arrayOf(android.Manifest.permission.CALL_PHONE),
-                        CALL_PHONE_PERMISSION_REQUEST
+                        this, arrayOf(android.Manifest.permission.ACCESS_COARSE_LOCATION), LOCATION_PERMISSION_REQUEST
                     )
                 }
             }
+        }
+
+        binding.TextViewWhatsapp.setOnClickListener(){
+            val intentWhatsapp = Intent(this,WhatsappActivity::class.java)
+            startActivity(intentWhatsapp)
         }
     }
 }
