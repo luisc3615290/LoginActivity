@@ -1,3 +1,6 @@
+# Release 2.2.0 - 16/12/2024
+- Métodos call (OK), email (WIP) y maps (WIP) en implementación
+
 # Release 2.1.1 - 15/12/2024
 - ID's y strings arreglados para Contat View
 
