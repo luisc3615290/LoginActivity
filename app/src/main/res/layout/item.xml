@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/imageViewPokemon"
+            android:background="@color/pokeball"
+            android:layout_width="101dp"
+            android:layout_height="97dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="5dp" android:layout_marginTop="5dp"/>
+    <ImageView
+            android:id="@+id/fav"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/fav_0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPokemon"
+            app:layout_constraintEnd_toStartOf="@+id/tvPokemonNombre"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginTop="5dp"/>
+    <TextView
+            android:id="@+id/tvPokemonNombre"
+            tools:text="NombreDePokemon"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@color/yellowGSW"
+            android:textAlignment="textEnd"
+            android:layout_width="210dp"
+            android:layout_height="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:foregroundGravity="center" android:layout_marginTop="5dp" android:layout_marginEnd="5dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb_attr_Ataque"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:max="15"
+            android:progress="3"
+            android:progressTint="@color/pokeball"
+            android:progressBackgroundTint="@color/yellowGSW"
+            android:progressBackgroundTintMode="screen"
+            android:scaleY="3"
+            app:layout_constraintEnd_toStartOf="@+id/MOD_attr_ATA"
+            android:layout_marginEnd="4dp" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/pb_attr_PS"/>
+    <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MOD_attr_ATA"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/MOD_attr_PS" android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_DEF_ESP" android:layout_marginEnd="12dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb_attr_PS"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:max="15"
+            android:progress="3"
+            android:progressTint="@color/pokeball"
+            android:progressBackgroundTint="@color/yellowGSW"
+            android:progressBackgroundTintMode="screen"
+            android:scaleY="3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/MOD_attr_PS" android:layout_marginEnd="4dp"
+            android:layout_marginTop="72dp"/>
+    <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MOD_attr_PS"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="72dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_ATA_ESP" android:layout_marginEnd="15dp"/>
+    <TextView
+            android:text="PS"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_PS"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/pb_attr_PS"
+            app:layout_constraintHorizontal_bias="0.976"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="76dp" android:layout_marginEnd="4dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPokemon"/>
+    <TextView
+            android:text="ATA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ATA"
+            app:layout_constraintEnd_toStartOf="@+id/pb_attr_Ataque"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_PS" android:layout_marginEnd="4dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb_attr_Defensa"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:max="15"
+            android:progress="3"
+            android:progressTint="@color/pokeball"
+            android:progressBackgroundTint="@color/yellowGSW"
+            android:progressBackgroundTintMode="screen"
+            android:scaleY="3"
+            app:layout_constraintEnd_toStartOf="@+id/MOD_attr_DEF"
+            android:layout_marginEnd="4dp" app:layout_constraintTop_toBottomOf="@+id/pb_attr_Ataque"
+            android:layout_marginTop="4dp"/>
+    <TextView
+            android:text="DEF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_DEF"
+            app:layout_constraintEnd_toStartOf="@+id/pb_attr_Defensa"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ATA" android:layout_marginEnd="4dp"/>
+    <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MOD_attr_DEF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/MOD_attr_ATA" android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_VEL" android:layout_marginEnd="37dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb_attr_Defensa_ESP"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:max="15"
+            android:progress="3"
+            android:progressTint="@color/pokeball"
+            android:progressBackgroundTint="@color/yellowGSW"
+            android:progressBackgroundTintMode="screen"
+            android:scaleY="3"
+            app:layout_constraintEnd_toStartOf="@+id/MOD_attr_DEF_ESP"
+            android:layout_marginEnd="4dp" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/pb_attr_Ataque_ESP"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_DEF_ESP"
+            android:text="DEF_ESP"
+            app:layout_constraintEnd_toStartOf="@+id/pb_attr_Defensa_ESP"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ATA_ESP" android:layout_marginEnd="4dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb_attr_Ataque_ESP"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:max="15"
+            android:progress="3"
+            android:progressTint="@color/pokeball"
+            android:progressBackgroundTint="@color/yellowGSW"
+            android:progressBackgroundTintMode="screen"
+            android:scaleY="3"
+            app:layout_constraintEnd_toStartOf="@+id/MOD_attr_ATA_ESP"
+            android:layout_marginEnd="4dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="72dp"
+    />
+    <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MOD_attr_ATA_ESP"
+            android:textStyle="bold"
+            android:textSize="20dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="72dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="5dp"
+    />
+    <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MOD_attr_DEF_ESP"
+            android:textStyle="bold"
+            android:textSize="20dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/MOD_attr_ATA_ESP" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="5dp"/>
+    <TextView
+            android:text="ATA_ESP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ATA_ESP"
+            app:layout_constraintEnd_toStartOf="@+id/pb_attr_Ataque_ESP"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="76dp"
+    />
+    <TextView
+            android:text="VEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_VEL"
+            app:layout_constraintEnd_toStartOf="@+id/pb_attr_Velocidad"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_DEF_ESP" android:layout_marginEnd="12dp"/>
+    <TextView
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MOD_attr_VEL"
+            android:textStyle="bold"
+            android:textSize="20dp" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/MOD_attr_DEF_ESP" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="5dp"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/pb_attr_Velocidad"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:max="15"
+            android:progress="3"
+            android:progressTint="@color/pokeball"
+            android:progressBackgroundTint="@color/yellowGSW"
+            android:progressBackgroundTintMode="screen"
+            android:scaleY="3"
+            app:layout_constraintEnd_toStartOf="@+id/MOD_attr_VEL"
+            android:layout_marginEnd="4dp" android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/pb_attr_Defensa_ESP"/>
+    <TextView
+            android:text="1.09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/PokemonAltura"
+            android:textStyle="bold" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="44dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="232dp"/>
+    <TextView
+            android:text="Tierra"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" android:id="@+id/tipoPokemon"
+            android:textAlignment="center"
+            android:background="@color/yellowGSW" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="5dp" app:layout_constraintEnd_toStartOf="@+id/tv_DEF"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="20dp"
+            app:layout_constraintHorizontal_bias="0.333"/>
+    <TextView
+            android:text="0.65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/PokemonPeso"
+            android:textStyle="bold" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="384dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="44dp"/>
+    <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp" app:srcCompat="@drawable/altura" android:id="@+id/alturaIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp" app:layout_constraintEnd_toStartOf="@+id/PokemonAltura"
+            android:layout_marginEnd="8dp"/>
+    <ImageView
+            android:layout_width="29dp"
+            android:layout_height="27dp" app:srcCompat="@drawable/peso" android:id="@+id/PesoIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp" app:layout_constraintEnd_toStartOf="@+id/PokemonPeso"
+            android:layout_marginEnd="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

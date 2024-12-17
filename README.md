@@ -1,3 +1,6 @@
+# Release 2.4.0 - 17/12/2024
+- Funcional y operativa. Defectos: Imágenes en RV Activity, mejora de márgenes en RVA, botón FAV en RVA
+
 # Release 2.3.0 - 16/12/2024
 - Terminada parte de Contact, totalmente funcional 
 
